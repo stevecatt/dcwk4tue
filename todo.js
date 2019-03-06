@@ -28,7 +28,7 @@ childDiv.appendChild(newButton)
 newCheck.addEventListener('change',function(){
    //clone the parent to move it 
       let clone = newtaskAdd.parentElement
-      console.log(cln)
+      console.log(clone)
       let doneList = document.getElementById("doneList")
       doneList.appendChild(clone)
       
