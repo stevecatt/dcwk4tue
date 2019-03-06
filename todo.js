@@ -12,28 +12,29 @@ let newtask=toDoItemBox.value
 let newCheck= document.createElement("input")
 let newtaskAdd = document.createElement("span")
 let newButton= document.createElement("button")
-newButton.addEventListener('click',function() {console.log('clicked the individual ') })
+//newButton.addEventListener('click',function() {console.log('clicked the individual ') })
 newButton.addEventListener('click',function() {this.parentElement.parentElement.removeChild(this.parentElement)})
 newtaskAdd.className = "lists"
 newtaskAdd.innerHTML=newtask
 newButton.innerHTML= "Remove"
 newButton.className= "remove-button"
 newCheck.type = "checkbox"
-newCheck.addEventListener('change',function(){console.log(this.parentElement)})
+//newCheck.addEventListener('change',function(){console.log(this.parentElement)})
 newCheck.addEventListener('change',function() {
-console.log(newCheck.checked)
+//console.log(newCheck.checked)
 let check = newCheck.checked
-if (check == true){{ console.log ("checked")}
+if (check == true){
 let clone = newtaskAdd.parentElement
-      console.log(clone)
+      //console.log(clone)
       
-      doneList.appendChild(clone)}
+      doneList.appendChild(clone)
+   }
 
- else if (check == false){{ console.log ("un checked")
+ else if (check == false){
  let clone = newtaskAdd.parentElement
-       console.log(clone)
+       //console.log(clone)
        
-       pending.appendChild(clone)}}})
+       pending.appendChild(clone)}})
    
 
 document.body.appendChild(pending)
@@ -42,12 +43,7 @@ childDiv.appendChild(newCheck)
 childDiv.appendChild(newtaskAdd)
 childDiv.appendChild(newButton)
 pending.appendChild(childDiv)
-//newCheck.addEventListener('change',function(){
-   //clone the parent to move it 
-     // let clone = newtaskAdd.parentElement
-      //console.log(clone)
-      //let doneList = document.getElementById("doneList")
-     // doneList.appendChild(clone)
+
       
       
     
